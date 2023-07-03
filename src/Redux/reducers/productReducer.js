@@ -3,6 +3,9 @@ import { ActionType } from "../Contants/action-type"
 const intialState={
     products:[]
 }
+const intialCart={
+    carts:[]
+}
 export const productReducer=(state=intialState,{type,payload})=>{
      switch(type){
         case ActionType.SET_PRODUCTS:
@@ -28,10 +31,10 @@ export const  productImageReducer=(state={},{type,payload})=>{
         return state;
     }
 }
-export const addToCartReducers=(state=intialState,{type,payload})=>{
+export const addToCartReducers=(state=intialCart,{type,payload})=>{
     switch(type){
         case ActionType.ADD_TO_CART:
-            return {...state,products:payload};
+            return {...state,carts:[...state.carts,payload]};
         default:
             return state;
     }
