@@ -1,0 +1,384 @@
+$mybgColor: #edf1ff;
+$textColor: #d19c97;
+$shadow: 0px 0px 20px rgba(0, 0, 0, 15%);
+a {
+  text-decoration: none;
+  color: black;
+}
+ul li {
+  list-style: none;
+}
+.homeWrapper {
+  // starting styling for top heading
+  .header_container {
+    background-color: $mybgColor;
+    padding: 1% 5%;
+    display: flex;
+    justify-content: space-between;
+    .left_header {
+      span {
+        font-size: 19px;
+        font-weight: 500;
+        margin-left: 6px;
+      }
+      span:hover {
+        text-decoration: underline;
+      }
+    }
+    .social_media_link_container > i {
+      margin-left: 10px;
+      font-size: 20px;
+    }
+  }
+  //   end of top footer
+  //   second heading styling part where search box logo are available
+  .Main_header {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .logo_container {
+      display: flex;
+      align-items: center;
+
+      .bigLogo {
+        background-color: #ffff;
+        padding: 2% 5%;
+        color: $textColor;
+        font-size: 40px;
+        font-weight: 600;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 15%);
+      }
+      h1 {
+        margin-left: 20px;
+        font-weight: 800;
+        font-size: 40px;
+      }
+    }
+    .Search_box_container {
+      background-color: #ffff;
+      display: flex;
+      width: 600px;
+
+      .search_box {
+        width: 95%;
+        border: 2px solid #edf1ff;
+
+        box-shadow: $shadow;
+        input {
+          width: 100%;
+          height: 100%;
+          padding: 10px;
+          outline: none;
+          border: none;
+          font-size: 19px;
+        }
+      }
+      .searchIcon {
+        width: 5%;
+
+        text-align: center;
+        box-shadow: $shadow;
+        i {
+          margin-top: 10px;
+        }
+      }
+    }
+    //     Styling for btn group
+    .Btn_container {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      .Btn {
+        padding: 5px 10px;
+        box-shadow: $shadow;
+      }
+    }
+  }
+  //   end of main header styling
+  //  styling for product list 
+  .Product_List{
+    padding: 5%;
+    height: 100%;
+    width: 100%;
+   .products{
+    display: grid;
+     
+    grid-template-columns: auto auto auto;
+    gap: 5%;
+    .product_box{
+      width: 80%;
+      .img_box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        img:hover{
+          transition: 0.5s ease-in-out;
+          scale: 1.1;
+        }
+      }
+      .btns {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+       
+        button{
+          border: none;
+          padding: 15px 20px;
+          font-size: 15px;
+          i{
+            color: $textColor
+          }
+           
+        }
+      }
+    }
+   
+   }
+  }
+  //   styling for the  first page of banner is
+  .banner_main_wrapper {
+    width: 99%;
+    margin: 2%;
+    background-color: #fff;
+    box-shadow: $shadow;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    .Category_section {
+      
+      width: 20%;
+      
+      
+      .categoryBox{
+        height: 440px;
+        max-height: 0;
+        overflow: hidden;
+        
+      }
+      .small{
+        
+        max-height: 440px;
+        
+      }
+      .category_box {
+        background-color: $textColor;
+        padding: 6%;
+        i{
+          cursor: pointer;
+        }
+      }
+      .category_item {
+        padding: 6% 10%;
+        border: 0.5px solid lightgray;
+        box-shadow: $shadow;
+        color: black;
+      }
+      .category_item:hover {
+        color: $textColor;
+        cursor: pointer;
+      }
+    }
+    // Styling for banner second part where top heading and slider are present
+    .Banner_section {
+      width: 80%;
+      .topHeading {
+        display: flex;
+        padding: 2%;
+        justify-content: space-between;
+        nav ul li a {
+          margin-left: 20px;
+          color: black;
+          font-size: 20px;
+        }
+        nav ul li a:hover {
+          color: $textColor;
+        }
+        .auth_btn {
+          margin-right: 10%;
+          display: flex;
+          gap: 20px;
+          button {
+            border: none;
+            background: transparent;
+            font-size: 20px;
+            cursor: pointer;
+          }
+          button:hover {
+            color: $textColor;
+          }
+        }
+      }
+      // styling for slider
+      .slide-container {
+        margin-top: 20px;
+        width: 98%;
+        height: 500px;
+
+        .slider_div {
+          position: relative;
+        }
+        img {
+          height: 400px;
+          width: 100%;
+        }
+        .banner_section_des {
+          position: absolute;
+          top: 30%;
+          left: 40%;
+          text-align: center;
+          h3 {
+            font-size: 40px;
+            color: #fff;
+          }
+          button {
+            padding: 10px 40px;
+            font-size: 20px;
+            margin-top: 20px;
+            cursor: pointer;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+  //   end of banner section
+  // product category styling started
+  .product_section {
+    width: 99%;
+    margin: 0% 2%;
+    padding: 2% 5%;
+    background-color: #fff;
+    box-shadow: $shadow;
+    .some_description {
+      display: flex;
+      justify-content: space-around;
+      h4 {
+        font-size: 23px;
+        font-weight: bold;
+      }
+    }
+    .categroy_section {
+      width: 100%;
+      margin-top: 10%;
+      .itemBox {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        row-gap: 7rem;
+        column-gap: 3rem;
+      }
+      .product_box {
+        height: 400px;
+        padding: 5% 2%;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 15%);
+        overflow: hidden;
+        img {
+          width: 70%;
+          transition: 0.5s ease-in-out;
+        }
+        img:hover {
+          scale: 1.2;
+        }
+        p {
+          padding: 10px;
+          font-size: 19px;
+          float: right;
+        }
+        h3 {
+          margin-top: 2rem;
+        }
+      }
+    }
+    //     end of category section
+    .Product_section {
+      margin-top: 4rem;
+      .page_heading {
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        #line {
+          width: 80px;
+          height: 2px;
+          background-color: black;
+        }
+        h3 {
+          font-size: 25px;
+        }
+      }
+      .products {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        row-gap: 7rem;
+        column-gap: 3rem;
+        margin-top: 4rem;
+        .product_box {
+          height: 100%;
+          width: 70%;
+          padding: 5%;
+          box-shadow: 0 2px 2px rgba(0, 0, 0, 15%);
+          overflow: hidden;
+          display: flex;
+          flex-direction: column;
+
+          .product_details {
+            text-align: center;
+            h4 {
+              padding: 10px;
+            }
+            p {
+              padding: 15px 10px;
+            }
+          }
+          .btns {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            button {
+              border: 1px solid lightgray;
+              padding: 10px;
+              box-shadow: $shadow;
+              cursor: pointer;
+              transition: 0.5s ease-in;
+            }
+            button:hover {
+              border-radius: 2px;
+              color: #fff;
+              background: black;
+            }
+          }
+        }
+      }
+    }
+  }
+   
+  // styling for footer component
+  .Footer_container {
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+    margin-top: 10%;
+    background-color: $mybgColor;
+    .footer_form {
+      width: 25%;
+
+      form {
+        width: 100%;
+        input {
+          margin: 20px;
+          padding: 10px;
+        }
+        button {
+          margin-left: 20px;
+          background-color: #d19c97;
+          width: 100%;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+ 
+
+}

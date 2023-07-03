@@ -1,0 +1,118 @@
+// intitalizing some varible that is mostly
+$mybgColor: #edf1ff;
+$textColor: #d19c97;
+$shadow: 0px 0px 20px rgba(0, 0, 0, 15%);
+a {
+  text-decoration: none;
+  color: black;
+}
+ul li {
+  list-style: none;
+}
+// Starting  styling code for cart page
+.Cart_page {
+  .Cart_heading {
+    padding: 5%;
+    background-color: $mybgColor;
+    text-align: center;
+    h1 {
+      font-size: 50px;
+      font-weight: 600;
+      margin: 10px;
+    }
+    h5 {
+      margin: 2%;
+      font-size: 18px;
+      span {
+        color: $textColor;
+      }
+    }
+  }
+  .cart_product_box {
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    .cart_product_area {
+      width: 65%;
+      padding: 1%;
+      background: #fff;
+      box-shadow: 0 0px 10px rgba(0, 0, 0, 15%);
+      table {
+        width: 100%;
+        text-align: center;
+        thead {
+          background-color: $mybgColor;
+          th {
+            font-size: 20px;
+            padding: 10px 0px;
+          }
+        }
+        tbody {
+          tr {
+            .first {
+              display: flex;
+              align-items: center;
+            }
+
+            td {
+              input {
+                width: 20px;
+              }
+            }
+          }
+        }
+        button {
+          padding: 3px 10px;
+          border: none;
+          cursor: pointer;
+          background-color: $textColor;
+          margin: 5px;
+        }
+      }
+    }
+    .payment_area {
+      width: 25%;
+      box-shadow: $shadow;
+      .coupon_container {
+        input {
+          padding: 8px;
+          border: 1px solid gray;
+          outline: none;
+          font-size: 19px;
+        }
+        button {
+          padding: 11px 40px;
+          border: none;
+          background-color: $textColor;
+          cursor: pointer;
+        }
+      }
+      .cart_summary_box {
+        box-shadow: $shadow;
+        margin-top: 40px;
+        padding: 10px;
+        h2 {
+          padding: 20px;
+          font-size: 22px;
+          font-weight: 800;
+          background-color: $mybgColor;
+        }
+        .price_box {
+          padding: 10px;
+          display: flex;
+          justify-content: space-between;
+          border-bottom: 1px solid $textColor;
+        }
+        button {
+          width: 100%;
+          border: none;
+          background-color: $textColor;
+          cursor: pointer;
+          height: 50px;
+        }
+      }
+    }
+  }
+}

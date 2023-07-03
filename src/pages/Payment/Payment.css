@@ -1,0 +1,46 @@
+.paymentConatainer{
+    width: 60%;
+    background-color: #fff;
+    
+    margin-left: 6%;
+    margin-top: 2%;
+    padding: 20px;
+}
+
+.titleBox{
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.25px 1.25px 1.6px;
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+.titleBox>button{
+    padding: 10px; 
+    margin-right: 10px;
+}
+
+.hello{
+    display:none;
+}
+.paymentOptionBox{
+    height: 200px;
+    width: 100%;
+    padding-top: -10%;
+    
+}
+.option{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+    margin-top: 10px;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.25px 1.25px 1.6px;
+    
+}
+.option >p{
+    padding-left: 40px;
+
+
+}
