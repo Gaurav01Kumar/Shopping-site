@@ -5,8 +5,9 @@ import "../../components/Sass/Cart.scss";
 import Footer from "../../components/footer/Footer"
 import { useSelector } from "react-redux";
 const Cart = () => {
-  const cartProduct=useSelector((state)=>state);
-  console.log(cartProduct)
+  
+  const cartItem=useSelector((state)=>state.cartProduct.carts)
+  console.log(cartItem)
   return (
     <>
       <div className="homeWrapper">

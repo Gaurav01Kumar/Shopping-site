@@ -39,3 +39,4 @@ export const addToCartReducers=(state=intialCart,{type,payload})=>{
             return state;
     }
 }
+
